@@ -7,7 +7,7 @@
             <span [ngStyle]="todo.completed && {'text-decoration': 'line-through'}">{{ todo.task }}</span>
         </div>
         <button class='complete' *ngIf='!todo.completed' (click)='markComplete(todo)'>Complete</button>
-        <button class='x' (click)='removeTodo(todo)'>X</button>
+        <button class='remove' (click)='removeTodo(todo)'>X</button>
     </li>
     
     </div>
